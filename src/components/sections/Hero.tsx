@@ -1,4 +1,3 @@
-
 import { ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
 
@@ -21,11 +20,10 @@ const Hero = () => {
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
               I'm <span className="text-orange-500">Shubh Kansara</span>,
               <br />
-              <span className="text-3xl sm:text-4xl md:text-5xl">Full Stack Web Developer</span>
+              <span className="text-3xl sm:text-4xl md:text-5xl">Full Stack Web & Mobile Developer</span>
             </h1>
             <p className="text-gray-600 dark:text-gray-300 text-lg mb-8 max-w-lg">
-              Motivated and detail-oriented Full Stack Developer skilled in Angular, Laravel, Node.js, 
-              JavaScript, TypeScript, React, and UI/UX.
+              Experienced Full Stack Developer specializing in Angular, React, Vue.js, Laravel, CodeIgniter, and Ionic. I build scalable web and mobile solutions for healthcare, e-commerce, SaaS, and logistics, including custom plugins and third-party integrations like QuickBooks and payment gateways.
             </p>
             <div className="flex flex-wrap gap-4">
               <a href="#contact" className="btn-primary">
@@ -64,7 +62,7 @@ const Hero = () => {
                   </svg>
                 ))}
               </div>
-              <p className="font-bold">10 Years</p>
+              <p className="font-bold">4+ Years</p>
             </div>
           </div>
         </div>

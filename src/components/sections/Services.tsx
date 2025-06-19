@@ -1,5 +1,4 @@
-
-import { Code2, Layout, Database, ArrowUpRight } from "lucide-react";
+import { Code2, Layout, Database, Smartphone, ArrowUpRight } from "lucide-react";
 import { useInView } from "@/hooks/useInView";
 
 const Services = () => {
@@ -9,17 +8,22 @@ const Services = () => {
     {
       title: "Frontend Development",
       icon: <Layout />,
-      description: "Creating responsive and interactive user interfaces using modern frameworks like React, Angular and Vue.",
+      description: "Building responsive and interactive web interfaces using Angular, React, Vue.js, and Ionic.",
     },
     {
       title: "Backend Development",
       icon: <Database />,
-      description: "Building robust server-side applications with Node.js, Laravel and databases to power your web applications.",
+      description: "Developing robust server-side applications and APIs with Laravel and CodeIgniter, integrating relational databases.",
+    },
+    {
+      title: "Mobile App Development",
+      icon: <Smartphone />,
+      description: "Creating cross-platform mobile applications using Ionic and Angular for seamless user experiences.",
     },
     {
       title: "Full Stack Solutions",
       icon: <Code2 />,
-      description: "End-to-end development from database design to user interface, handling the complete application lifecycle.",
+      description: "Delivering end-to-end solutions, from database design to deployment, using modern web and mobile technologies.",
     },
   ];
 
@@ -31,7 +35,7 @@ const Services = () => {
           <h2 className="section-title">My Services</h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-4 gap-8">
           {services.map((service, index) => (
             <div 
               key={index} 

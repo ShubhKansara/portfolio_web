@@ -17,12 +17,12 @@ const Index = () => {
       <div className="min-h-screen">
         <Navbar />
         <Hero />
-        {/* <About /> */}
+        <About />
         <Services />
         <Experience />
         <Portfolio />
         {/* <Testimonials /> */}
-        <Blog />
+        {/* <Blog /> */}
         <Contact />
         <Footer />
       </div>

@@ -9,10 +9,10 @@ const Footer = () => {
   };
 
   const socialLinks = [
-    { icon: <Mail size={18} />, href: "mailto:abc@gmail.com" },
-    { icon: <Phone size={18} />, href: "tel:+915959595959" },
-    { icon: <Linkedin size={18} />, href: "https://linkedin.com/in/abc" },
-    { icon: <Github size={18} />, href: "#" },
+    { icon: <Mail size={18} />, href: "mailto:shubh.k.kansara@gmail.com" },
+    { icon: <Phone size={18} />, href: "tel:+916354980273" },
+    { icon: <Linkedin size={18} />, href: "https://www.linkedin.com/in/shubhkansara/" },
+    { icon: <Github size={18} />, href: "https://www.github.com/ShubhKansara" },
     { icon: <MapPin size={18} />, href: "https://maps.google.com/?q=Mansa,Gujarat,India" },
   ];
 
@@ -51,11 +51,6 @@ const Footer = () => {
               <li>
                 <a href="#portfolio" className="text-gray-400 hover:text-orange-500 transition-colors">
                   Portfolio
-                </a>
-              </li>
-              <li>
-                <a href="#blog" className="text-gray-400 hover:text-orange-500 transition-colors">
-                  Blog
                 </a>
               </li>
               <li>

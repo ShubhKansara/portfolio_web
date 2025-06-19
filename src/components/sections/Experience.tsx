@@ -1,4 +1,3 @@
-
 import { useInView } from "@/hooks/useInView";
 
 const Experience = () => {
@@ -6,22 +5,28 @@ const Experience = () => {
 
   const experiences = [
     {
-      title: "Full Stack Web Developer",
-      company: "Kshitiz Infotech Pvt. Ltd.",
-      period: "July 2022 – Sep 2023",
-      description: "Built dynamic apps, integrated APIs, and improved performance"
+      title: "Development Team Lead",
+      company: "Tech Rational",
+      period: "Jan 2025 – Present",
+      description: "Leading the development team in project planning, code review, and implementation. Key skills: Project Planing, Code Review, Relational Databases, Leadership, and more."
     },
     {
-      title: "Web Developer Trainee",
-      company: "Kshitiz Infotech",
-      period: "March 2022 – July 2022",
-      description: "Designed UI components and supported backend logic"
+      title: "Full-stack Developer",
+      company: "Tech Rational",
+      period: "Oct 2023 – Present",
+      description: "Building and maintaining web and mobile applications using Laravel, CodeIgniter, Angular, React, and more."
     },
     {
-      title: "Web Developer Trainee",
-      company: "Syn-Soft Technologies",
-      period: "March 2021 – June 2021",
-      description: "Learned Laravel, worked on UI logic, and created mini projects"
+      title: "Full-stack Developer",
+      company: "Kshatrainfotech Pvt Ltd",
+      period: "Mar 2022 – Sep 2023",
+      description: "Developed scalable web apps with Angular, Vue.js, and Laravel."
+    },
+    {
+      title: "Intern Web Developer",
+      company: "Sys.out.Technologies",
+      period: "Mar 2021 – Jun 2021",
+      description: "Focused on learning web development with Angular during the internship."
     }
   ];
 

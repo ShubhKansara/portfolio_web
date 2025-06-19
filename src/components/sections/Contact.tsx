@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Phone, Mail, MapPin, Send } from "lucide-react";
 import { useInView } from "@/hooks/useInView";
 import { useToast } from "@/components/ui/use-toast";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const { ref, inView } = useInView();
@@ -22,37 +23,51 @@ const Contact = () => {
   };
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
+  e.preventDefault();
+  setIsSubmitting(true);
+
+  const data = {
+    ...formData,
+    time: new Date().toLocaleString(), // Add timestamp
+  }
+  emailjs
+    .send(
+      "service_41jm799",      // e.g., "service_xxx"
+      "template_ze21sky",     // e.g., "template_xxx"
+      data,
+      "VwbP5A7AMbwgQwWwK"          // public key
+    )
+    .then(() => {
       toast({
         title: "Message sent!",
         description: "Thank you for your message. I'll get back to you soon.",
       });
-      setFormData({
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
+      setFormData({ name: "", email: "", subject: "", message: "" });
+    })
+    .catch((err) => {
+      toast({
+        title: "Failed to send message",
+        description: "Please try again later.",
       });
+      console.error("EmailJS Error:", err);
+    })
+    .finally(() => {
       setIsSubmitting(false);
-    }, 1000);
-  };
+    });
+};
 
   const contactInfo = [
     {
       icon: <Phone className="h-6 w-6" />,
       title: "Phone",
-      value: "+91 59595959595",
-      link: "tel:+915959595959",
+      value: "+91 6359480273",
+      link: "tel:+916359480273",
     },
     {
       icon: <Mail className="h-6 w-6" />,
       title: "Email",
-      value: "abc@gmail.com",
-      link: "mailto:abc@gmail.com",
+      value: "shubh.k.kansara@gmail.com",
+      link: "mailto:shubh.k.kansara@gmail.com",
     },
     {
       icon: <MapPin className="h-6 w-6" />,
